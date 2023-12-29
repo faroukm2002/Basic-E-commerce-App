@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Navbar from "./components/Navbar";
 import ProductsList from "./components/ProductsList";
 import Slider from "./components/Slider";
@@ -14,7 +15,7 @@ function App() {
       <ProductsList></ProductsList>
   </>
 } ></Route>
-
+<Route path="about" element={<About></About>}> </Route>
 </Routes>
 
       
