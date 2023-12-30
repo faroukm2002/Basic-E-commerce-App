@@ -4,7 +4,7 @@ import Product from "./Product"
 
 function ProductDetails(){
     const api_url = "https://fakestoreapi.com/products"
-    const [product ,setProduct]=useState({})
+    const [product ,setProduct]=useState([])
 
     const  params=useParams()
     console.log(params)

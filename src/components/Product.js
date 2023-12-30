@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Product(props) {
   const { product, showButton } = props;
   return (
@@ -8,11 +10,11 @@ function Product(props) {
           <h5 className="card-title">{product.title}</h5>
           <p className="card-text">{product.description}</p>
 
-          {showButton && 
-            <button href="/#" className="btn btn-primary">
+          {showButton && (
+            <Link to={`/product/${product.id}`} className="btn btn-primary">
               Details
-            </button>
-          }
+            </Link>
+          )}
         </div>
       </div>
     </>
